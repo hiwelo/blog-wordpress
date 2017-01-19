@@ -1,0 +1,51 @@
+{
+  "name": "hiwelo-blog/wordpress-project",
+  "type": "project",
+  "license": "GPL-3.0+",
+  "description": "Hiwelo's blog WordPress project, based on a Bedrock environment",
+  "homepage": "https://blog.hiwelo.co/",
+  "authors": [
+    {
+      "name": "Damien Senger",
+      "email": "damien@raccoon.studio",
+      "homepage": "https://hiwelo.co/"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/hiwelo/blog-wordpress/issues",
+    "source": "https://github.com/hiwelo/blog-wordpress/"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "composer/installers": "~1.0.12",
+    "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.7.1",
+    "oscarotero/env": "^1.0",
+    "roots/wp-password-bcrypt": "1.0.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.5.1"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs"
+    ]
+  }
+}
