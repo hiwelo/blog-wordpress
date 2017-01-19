@@ -22,6 +22,18 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.5.5",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&t=5.5.5&a=download&k=b3JkZXJfaWQ9OTcxNjd8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTctMDEtMTEgMTM6MDY6NTE="
+        }
+      }
     }
   ],
   "require": {
@@ -31,7 +43,8 @@
     "johnpbloch/wordpress": "4.7.1",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "wpackagist-plugin/polylang": "^2.0"
+    "wpackagist-plugin/polylang": "^2.0",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.5"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

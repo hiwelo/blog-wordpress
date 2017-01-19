@@ -4,8 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c1b7191b5ced55d456e0d6de3b17614",
+    "content-hash": "845951792a2fd4eedfedd14ecb8a5ae3",
     "packages": [
+        {
+            "name": "advanced-custom-fields/advanced-custom-fields-pro",
+            "version": "5.5.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&t=5.5.5&a=download&k=b3JkZXJfaWQ9OTcxNjd8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTctMDEtMTEgMTM6MDY6NTE=",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.25",
@@ -351,7 +362,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/polylang.2.0.12.zip",
-                "reference": null,
+                "reference": "tags/2.0.12",
                 "shasum": null
             },
             "require": {
